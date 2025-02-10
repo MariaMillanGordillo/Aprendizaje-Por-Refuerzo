@@ -1,5 +1,3 @@
-# Reorganized Code
-
 import numpy as np
 import gymnasium as gym
 from gymnasium import spaces
@@ -17,9 +15,7 @@ from copy import deepcopy
 from math import sqrt, log
 from anytree import AnyNode
 
-# ===========================================================================
-# Reward Functions
-# ===========================================================================
+# Funciones de recompensa
 
 def calculate_reward_simple(env):
     """
@@ -202,9 +198,8 @@ def calculate_reward_mixed(env):
 
     return reward
 
-# ===========================================================================
-# Custom Environment Definition
-# ===========================================================================
+# Definición del entorno del robot Pick & Place
+
 class RobotPickAndPlaceEnv(gym.Env):
     """
     Representa el entorno del robot para resolver el problema de pick & place.
@@ -392,9 +387,7 @@ class RobotPickAndPlaceEnv(gym.Env):
         """
         plt.close()
 
-# ===========================================================================
 # Configuración de Callbacks para DQN y PPO
-# ===========================================================================
 
 def setup_callbacks(log_dir, best_model_dir, eval_freq=10000, n_eval_episodes=5):
     """Configura el callback de evaluación para ambos algoritmos."""
@@ -432,9 +425,7 @@ def plot_evaluations(log_dir, title):
     plt.close()
 
 
-# ===========================================================================
 # Entrenamiento Integrado con Callbacks
-# ===========================================================================
 
 if __name__ == "__main__":
     # Crear entorno principal
