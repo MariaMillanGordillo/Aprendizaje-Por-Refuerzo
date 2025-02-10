@@ -1,4 +1,4 @@
-# README - Control de Robot Manipulador con Aprendizaje por Refuerzo
+# Aprendizaje por Refuerzo
 
 ## Descripción General
 Este proyecto implementa un escenario para un robot manipulador en un entorno de Aprendizaje por Refuerzo (RL). Se han desarrollado distintos enfoques para resolver el problema de Pick&Place, utilizando algoritmos como Monte-Carlo con Exploring Starts, Q-Learning, Monte Carlo Tree Search (MCTS) y técnicas de aprendizaje profundo con Stable Baselines 3 (SB3).
